@@ -7,28 +7,46 @@
     <style>
         body {
             margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1b2a; color: white; text-align: center;
+            color: white; text-align: center;
+            /* PENGATURAN BACKGROUND CUSTOM */
+            background-image: url('URL_GAMBAR_9_16_KAMU_DISINI');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #0d1b2a; /* Warna cadangan jika gambar gagal dimuat */
         }
-        nav { background-color: #1a5276; padding: 20px; font-size: 20px; font-weight: bold; letter-spacing: 2px;}
-        
-        .header-title { margin: 40px 0; }
-        .header-title h1 { font-size: 36px; margin-bottom: 5px; color: #5dade2; }
-        .header-title p { color: #a2a9b1; font-size: 18px; }
 
-        /* Desain Kotak Daftar Karakter */
+        /* Overlay gelap agar teks tetap mudah dibaca di atas gambar */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Transparansi 60% */
+            z-index: -1;
+        }
+
+        nav { background-color: rgba(26, 82, 118, 0.9); padding: 20px; font-size: 20px; font-weight: bold; letter-spacing: 2px;}
+        
+        .header-title { margin: 40px 0; position: relative; }
+        .header-title h1 { font-size: 36px; margin-bottom: 5px; color: #5dade2; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .header-title p { color: #d5dbdb; font-size: 18px; }
+
         .character-grid {
-            display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; max-width: 1000px; margin: auto;
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; max-width: 1100px; margin: auto;
+            position: relative;
         }
 
         .char-card {
-            background-color: #1b2631;
+            background-color: rgba(27, 38, 49, 0.85); /* Sedikit transparan agar estetik */
             border: 2px solid #2e86c1;
             border-radius: 10px;
-            width: 200px;
+            width: 180px;
             padding: 15px;
             text-decoration: none; 
             color: white;
             transition: 0.3s;
+            backdrop-filter: blur(5px); /* Efek blur pada kartu */
         }
 
         .char-card:hover {
@@ -36,9 +54,10 @@
             transform: translateY(-5px); 
         }
 
-        .char-card img { width: 100%; border-radius: 5px; margin-bottom: 10px; }
-        .char-card h3 { margin: 0 0 5px 0; font-size: 20px; }
-        .char-card p { margin: 0; font-size: 14px; color: #d5dbdb; }
+        .char-card img { width: 100%; border-radius: 5px; margin-bottom: 10px; filter: grayscale(50%); }
+        .char-card:hover img { filter: grayscale(0%); }
+        .char-card h3 { margin: 0 0 5px 0; font-size: 18px; }
+        .char-card p { margin: 0; font-size: 13px; color: #bdc3c7; }
     </style>
 </head>
 <body>
@@ -50,244 +69,85 @@
         <p>Pilih karakter untuk dilihat!</p>
     </div>
 
-    <!-- Tambahkan ID 'charGrid' agar mudah dibaca oleh JavaScript -->
     <div class="character-grid" id="charGrid">
         
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Akane" alt="Akane">
-            <h3>Akane</h3>
-            <p>Mage / Support</p>
+        <a href="Zuya.html" class="char-card">
+            <img src="placeholder/zuya_icon.png" alt="Zuya">
+            <h3>Zuya</h3>
+            <p>From Rule Breaker</p>
         </a>
 
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Alaric" alt="Alaric">
-            <h3>Alaric</h3>
-            <p>Knight Commander</p>
-        </a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
+        <a href="#" class="char-card"><h3>NOT RELEASED YET</h3><p>NOT RELEASED YET</p></a>
 
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Arthur" alt="Arthur">
-            <h3>Arthur</h3>
-            <p>Holy Knight</p>
-        </a>
+    </div>
 
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Bael" alt="Bael">
-            <h3>Bael</h3>
-            <p>Demon Lord</p>
-        </a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const grid = document.getElementById('charGrid');
+            const cards = Array.from(grid.querySelectorAll('.char-card'));
 
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Bima" alt="Bima">
-            <h3>Bima</h3>
-            <p>Heavy Brawler</p>
-        </a>
+            cards.sort((a, b) => {
+                const nameA = a.querySelector('h3').innerText.toUpperCase();
+                const nameB = b.querySelector('h3').innerText.toUpperCase();
+                return nameA.localeCompare(nameB);
+            });
 
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Caelum" alt="Caelum">
-            <h3>Caelum</h3>
-            <p>Sky Sorcerer</p>
-        </a>
+            grid.innerHTML = '';
+            cards.forEach(card => grid.appendChild(card));
+        });
+    </script>
 
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Cassian" alt="Cassian">
-            <h3>Cassian</h3>
-            <p>Rogue</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Dante" alt="Dante">
-            <h3>Dante</h3>
-            <p>Demon Hunter</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Dewa" alt="Dewa">
-            <h3>Dewa</h3>
-            <p>Spirit Summoner</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Elara" alt="Elara">
-            <h3>Elara</h3>
-            <p>Elf Ranger</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Ezra" alt="Ezra">
-            <h3>Ezra</h3>
-            <p>Alchemist</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Fabian" alt="Fabian">
-            <h3>Fabian</h3>
-            <p>Guild Master</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Fenrir" alt="Fenrir">
-            <h3>Fenrir</h3>
-            <p>Beastkin</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Gabriel" alt="Gabriel">
-            <h3>Gabriel</h3>
-            <p>Archangel</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Gareth" alt="Gareth">
-            <h3>Gareth</h3>
-            <p>Defender</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Hades" alt="Hades">
-            <h3>Hades</h3>
-            <p>Necromancer</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Hori" alt="Hori">
-            <h3>Hori</h3>
-            <p>Spellblade</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Icarus" alt="Icarus">
-            <h3>Icarus</h3>
-            <p>Dragoon</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Iris" alt="Iris">
-            <h3>Iris</h3>
-            <p>Healer</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Jace" alt="Jace">
-            <h3>Jace</h3>
-            <p>Illusionist</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Jinwoo" alt="Jinwoo">
-            <h3>Jinwoo</h3>
-            <p>Shadow Monarch</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Kael" alt="Kael">
-            <h3>Kael</h3>
-            <p>Pyromancer</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Kira" alt="Kira">
-            <h3>Kira</h3>
-            <p>Assassin</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Lancelot" alt="Lancelot">
-            <h3>Lancelot</h3>
-            <p>Cavalry</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Leon" alt="Leon">
-            <h3>Leon</h3>
-            <p>Swordsman</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Magnus" alt="Magnus">
-            <h3>Magnus</h3>
-            <p>Grand Mage</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Mira" alt="Mira">
-            <h3>Mira</h3>
-            <p>Sniper</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Nero" alt="Nero">
-            <h3>Nero</h3>
-            <p>Dark Knight</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Nova" alt="Nova">
-            <h3>Nova</h3>
-            <p>Astrologer</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Orion" alt="Orion">
-            <h3>Orion</h3>
-            <p>Beast Tamer</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Orpheus" alt="Orpheus">
-            <h3>Orpheus</h3>
-            <p>Bard</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Percival" alt="Percival">
-            <h3>Percival</h3>
-            <p>Paladin</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Priscilla" alt="Priscilla">
-            <h3>Priscilla</h3>
-            <p>Ice Empress</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Qadir" alt="Qadir">
-            <h3>Qadir</h3>
-            <p>Desert Mercenary</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Quinn" alt="Quinn">
-            <h3>Quinn</h3>
-            <p>Scout</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Rael" alt="Rael">
-            <h3>Rael</h3>
-            <p>Vampire Noble</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Rian" alt="Rian">
-            <h3>Rian</h3>
-            <p>Spearman</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Silas" alt="Silas">
-            <h3>Silas</h3>
-            <p>Merchant</p>
-        </a>
-
-        <a href="#" class="char-card">
-            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Sylph" alt="Sylph">
-            <h3>Sylph</h3>
-            <p>Wind Spirit</p>
-        </a>
-
-        <a href="#" class="char-card">
+</body>
+</html>
+>
             <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=Theo" alt="Theo">
             <h3>Theo</h3>
             <p>Cleric</p>
