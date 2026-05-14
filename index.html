@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Karakter - Beranda</title>
+    <style>
+        body {
+            margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1b2a; color: white; text-align: center;
+        }
+        nav { background-color: #1a5276; padding: 20px; font-size: 20px; font-weight: bold; letter-spacing: 2px;}
+        
+        .header-title { margin: 40px 0; }
+        .header-title h1 { font-size: 36px; margin-bottom: 5px; color: #5dade2; }
+        .header-title p { color: #a2a9b1; font-size: 18px; }
+
+        /* Desain Kotak Daftar Karakter */
+        .character-grid {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; max-width: 900px; margin: auto;
+        }
+
+        .char-card {
+            background-color: #1b2631;
+            border: 2px solid #2e86c1;
+            border-radius: 10px;
+            width: 200px;
+            padding: 15px;
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            color: white;
+            transition: 0.3s;
+        }
+
+        .char-card:hover {
+            background-color: #2e86c1;
+            transform: translateY(-5px); /* Efek melayang saat disentuh */
+        }
+
+        .char-card img { width: 100%; border-radius: 5px; margin-bottom: 10px; }
+        .char-card h3 { margin: 0 0 5px 0; font-size: 20px; }
+        .char-card p { margin: 0; font-size: 14px; color: #d5dbdb; }
+    </style>
+</head>
+<body>
+
+    <nav>DATABASE ORIGINAL CHARACTER</nav>
+
+    <div class="header-title">
+        <h1>RILE BREAKER UNIVERSE</h1>
+        <p>Pilih karakter untuk melihat database lengkap.</p>
+    </div>
+
+    <div class="character-grid">
+        
+        <a href="zuya.html" class="char-card">
+            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=FOTO+ZUYA" alt="Zuya">
+            <h3>Zuya</h3>
+            <p>Jendral Divisi 4</p>
+        </a>
+
+        <a href="#" class="char-card">
+            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=FOTO+OC+2" alt="Karakter 2">
+            <h3>Nama OC 2</h3>
+            <p>Peran / Posisi</p>
+        </a>
+
+        <a href="#" class="char-card">
+            <img src="https://via.placeholder.com/200x200/1a4261/ffffff?text=FOTO+OC+3" alt="Karakter 3">
+            <h3>Nama OC 3</h3>
+            <p>Peran / Posisi</p>
+        </a>
+
+    </div>
+
+</body>
+</html>
