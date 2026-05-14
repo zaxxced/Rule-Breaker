@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni Zuya - Profile</title>
+    <style>
+        /* Mengatur dasar halaman agar mirip dengan UI di foto */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1a4261; /* Warna biru gelap sesuai background foto */
+            color: white;
+        }
+
+        /* Navigasi atas (Biru Muda) */
+        nav {
+            background-color: #3198c1;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        nav span {
+            cursor: pointer;
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 500px; /* Ukuran pas untuk tampilan HP/Wiki */
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Frame Foto Karakter */
+        .image-card {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Overlay Nama di dalam Foto (Kotak Putih/Abu) */
+        .name-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #1a4261;
+            padding: 10px 20px;
+            border-radius: 5px;
+            line-height: 1.2;
+        }
+
+        .name-overlay .main-name {
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .name-overlay .sub-name {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Bagian Teks Biodata */
+        .info-section {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .first-appear {
+            color: #9ec9e2;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        /* Warna label (Name:, Age:, dll) agar sedikit lebih terang */
+        .label {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .value {
+            color: #d1e8f7;
+        }
+
+        /* Spasi antar kategori */
+        .section-break {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <span>Menu</span>
+        <span>Character List</span>
+        <span>Fiction list</span>
+    </nav>
+
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="https://via.placeholder.com/500x650/1a4261/ffffff?text=FOTO+ZUYA+DI+SINI" alt="Giovanni Zuya">
+            
+            <div class="name-overlay">
+                <span class="main-name">ZUYA</span>
+                <span class="sub-name">FROM RILE BREAKER</span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <span class="first-appear">First Appear: Episode 9</span>
+
+            <div class="info-row"><span class="label">Name:</span> <span class="value">Giovanni Zuya</span></div>
+            <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Zuya</span></div>
+            <div class="info-row"><span class="label">Age:</span> <span class="value">29</span></div>
+            <div class="info-row"><span class="label">Height:</span> <span class="value">162</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Male?</span></div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Jendral Divisi 4</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row">
+                    <span class="label">Characteristics:</span> 
+                    <span class="value">ramah, suka godain dan bicaranya nyantai+lembut, Jendral paling populer di kalangan anak-anak, femboy, intinya kek femboy.</span>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">Semua orang.</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">Cheater.</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Power:</span> <span class="value">RB Manipulasi waktu.</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
