@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesissia Arkhabilly - Profile</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Teks utama diubah menjadi abu-abu sangat gelap agar nyaman dibaca di background putih */
+            color: #222222; 
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* --- TRIK BACKGROUND BLUR --- */
+        /* 1. Latar Belakang Gambar yang Diblur */
+        .bg-blur {
+            position: fixed;
+            top: -5%; 
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background-image: url('Image/arkha.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(50px); 
+            z-index: -2; 
+        }
+
+        /* 2. Lapisan Overlay Putih agar terang */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Warna overlay putih dominan dengan sedikit transparansi */
+            background-color: rgba(255, 255, 255, 0.85); 
+            z-index: -1;
+        }
+        /* --------------------------- */
+
+        /* Navigasi atas (Putih dengan aksen Hijau Tua) */
+        nav {
+            background-color: rgba(255, 255, 255, 0.95); 
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1b5e20; /* Teks hijau tua */
+            border-bottom: 2px solid #1b5e20; /* Garis bawah hijau tua */
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav span {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav span:hover {
+            color: #4caf50; /* Hijau lebih terang saat di-hover */
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            position: relative; 
+            z-index: 1;
+        }
+
+        /* Frame Foto Karakter */
+        .image-card {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            /* Border Hijau Tua */
+            border: 2px solid #1b5e20;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Bagian Teks Biodata */
+        .info-section {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            /* Kotak info putih sedikit transparan */
+            background: rgba(255, 255, 255, 0.7); 
+            padding: 20px;
+            border-radius: 15px;
+            /* Border Hijau Tua */
+            border: 2px solid #1b5e20;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            backdrop-filter: blur(8px);
+        }
+
+        .first-appear {
+            /* Teks highlight Hijau Tua */
+            color: #1b5e20; 
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            /* Hijau tua untuk judul label */
+            color: #1b5e20; 
+        }
+
+        .value {
+            /* Abu-abu sangat gelap untuk teks konten agar mudah dibaca */
+            color: #333333; 
+        }
+
+        .section-break {
+            margin-top: 20px;
+            padding-top: 15px;
+            /* Garis pemisah Hijau Tua sedikit transparan */
+            border-top: 1px solid rgba(27, 94, 32, 0.4); 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menambahkan Div untuk Background Blur -->
+    <div class="bg-blur"></div>
+    <div class="bg-overlay"></div>
+
+    <nav>
+         <a href="index.html" style="text-decoration: none; color: inherit;">
+        <span>Character List</span>
+         </a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="Image/faedil.png" alt="Genesissia Arkhabilly">
+        </div>
+
+        <div class="info-section">
+            <span class="first-appear">First Appear: Episode 1</span>
+
+            <div class="info-row"><span class="label">Name:</span> <span class="value">Genesissia Arkhabilly</span></div>
+            <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Arkha</span></div>
+            <div class="info-row"><span class="label">Age:</span> <span class="value">18</span></div>
+            <div class="info-row"><span class="label">Height:</span> <span class="value">177</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Male</span></div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Main Character</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row">
+                    <span class="label">Characteristics:</span> 
+                    <span class="value">sedikit penakut, bimbang, ramah, baik, berani ketika dibutuhkan.</span>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">Semua makanan manis, Anime.</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">?</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Power:</span> <span class="value">Hand to Hand combat, basic Sword combat.</span></div>
+            </div>
+          <div class="section-break">
+                <div class="info-row">
+    <span class="label" style="display: block; margin-bottom: 5px;">Summary</span> 
+    <span class="value" style="display: block; line-height: 1.5;">Seorang pemuda yang terus mencoba menjadi lebih kuat, menjadi lebih baik walau masih terbayang masa lalunya.</span>
+</div>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
