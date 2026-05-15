@@ -14,7 +14,8 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            background-color: #0d1b2a; /* Warna cadangan jika gambar gagal dimuat */
+            background-color: #0d1b2a; 
+            padding-bottom: 80px; /* Ruang tambahan di bawah agar kartu tidak tertutup search bar */
         }
 
         /* Overlay gelap agar teks tetap mudah dibaca di atas gambar */
@@ -22,7 +23,7 @@
             content: "";
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Transparansi 60% */
+            background: rgba(0, 0, 0, 0.6); 
             z-index: -1;
         }
 
@@ -38,7 +39,7 @@
         }
 
         .char-card {
-            background-color: rgba(27, 38, 49, 0.85); /* Sedikit transparan agar estetik */
+            background-color: rgba(27, 38, 49, 0.85); 
             border: 2px solid #2e86c1;
             border-radius: 10px;
             width: 180px;
@@ -46,7 +47,7 @@
             text-decoration: none; 
             color: white;
             transition: 0.3s;
-            backdrop-filter: blur(5px); /* Efek blur pada kartu */
+            backdrop-filter: blur(5px); 
         }
 
         .char-card:hover {
@@ -58,6 +59,43 @@
         .char-card:hover img { filter: grayscale(0%); }
         .char-card h3 { margin: 0 0 5px 0; font-size: 18px; }
         .char-card p { margin: 0; font-size: 13px; color: #bdc3c7; }
+
+        /* --- STYLING PENCARIAN MELAYANG --- */
+        .search-container {
+            position: fixed;
+            bottom: 25px; /* Jarak dari bawah layar */
+            left: 50%;
+            transform: translateX(-50%); /* Menengahkan elemen secara presisi */
+            width: 90%;
+            max-width: 400px;
+            z-index: 100;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 25px;
+            border-radius: 30px;
+            border: 2px solid #5dade2;
+            background-color: rgba(13, 27, 42, 0.85);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+            box-sizing: border-box;
+            backdrop-filter: blur(10px); /* Efek blur/kaca */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            transition: 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: #3498db;
+            background-color: rgba(27, 38, 49, 0.95);
+            box-shadow: 0 10px 40px rgba(52, 152, 219, 0.4);
+        }
+
+        .search-input::placeholder {
+            color: #a2a9b1;
+        }
     </style>
 </head>
 <body>
@@ -131,7 +169,6 @@
             <p>Intelligence Agent</p>
         </a>
 
-        <!-- Format Zuya sedikit diubah agar sejajar dengan yang lain (menggunakan tag <h3>) -->
         <a href="Zuya.html" class="char-card">
             <img src="placeholder/zuya_icon.png" alt="Zuya">
             <h3>Zuya</h3>
@@ -140,23 +177,46 @@
 
     </div>
 
-    <!-- SCRIPT PENGURUTAN OTOMATIS -->
+    <!-- KOLOM PENCARIAN MELAYANG -->
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Cari nama atau asal (Cth: Rule Breaker)...">
+    </div>
+
+    <!-- SCRIPT GABUNGAN: PENGURUTAN & PENCARIAN -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Mengambil elemen grid dan semua kartu di dalamnya
             const grid = document.getElementById('charGrid');
             const cards = Array.from(grid.querySelectorAll('.char-card'));
+            const searchInput = document.getElementById('searchInput');
 
-            // Proses mengurutkan kartu berdasarkan teks di dalam tag <h3>
+            // 1. Proses mengurutkan kartu dari A - Z
             cards.sort((a, b) => {
                 const nameA = a.querySelector('h3').innerText.toUpperCase();
                 const nameB = b.querySelector('h3').innerText.toUpperCase();
                 return nameA.localeCompare(nameB);
             });
 
-            // Menghapus kartu lama dan memasukkan kartu yang sudah berurutan
+            // Memasukkan kartu yang sudah berurutan kembali ke dalam grid
             grid.innerHTML = '';
             cards.forEach(card => grid.appendChild(card));
+
+            // 2. Proses Pencarian (Real-time Filtering)
+            searchInput.addEventListener('input', function() {
+                const filterText = searchInput.value.toLowerCase();
+
+                // Lakukan pengecekan pada setiap kartu
+                cards.forEach(card => {
+                    const charName = card.querySelector('h3').innerText.toLowerCase();
+                    const charDesc = card.querySelector('p').innerText.toLowerCase();
+
+                    // Jika nama atau deskripsi mengandung kata yang dicari, tampilkan kartu
+                    if (charName.includes(filterText) || charDesc.includes(filterText)) {
+                        card.style.display = ""; // Munculkan
+                    } else {
+                        card.style.display = "none"; // Sembunyikan
+                    }
+                });
+            });
         });
     </script>
 
