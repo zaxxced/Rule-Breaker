@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken - Profile</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Teks utama diubah menjadi putih kehijauan (mint pucat) agar nyaman dibaca di background gelap */
+            color: #d8f3dc; 
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* --- TRIK BACKGROUND BLUR --- */
+        /* 1. Latar Belakang Gambar yang Diblur */
+        .bg-blur {
+            position: fixed;
+            top: -5%; 
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background-image: url('Image/ken.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(50px); 
+            z-index: -2; 
+        }
+
+        /* 2. Lapisan Overlay Hijau Sangat Gelap */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Warna overlay hijau sangat gelap (nyaris hitam) transparan */
+            background-color: rgba(8, 28, 21, 0.35); 
+            z-index: -1;
+        }
+        /* --------------------------- */
+
+        /* Navigasi atas (Hijau gelap transparan) */
+        nav {
+            background-color: rgba(27, 67, 50, 0.85); 
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #95d5b2; /* Teks hijau mint terang */
+            /* Border bawah hijau gelap yang sedikit lebih terang dari background */
+            border-bottom: 2px solid #2d6a4f; 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        nav span {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav span:hover {
+            color: #b7e4c7; /* Warna lebih terang saat di-hover */
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            position: relative; 
+            z-index: 1;
+        }
+
+        /* Frame Foto Karakter */
+        .image-card {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            /* Border Hijau Gelap (tapi lebih terang dari background) */
+            border: 2px solid #2d6a4f;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6); 
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Bagian Teks Biodata */
+        .info-section {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            /* Kotak info hijau gelap transparan */
+            background: rgba(27, 67, 50, 0.75); 
+            padding: 20px;
+            border-radius: 15px;
+            /* Border Hijau Gelap (tapi lebih terang dari background) */
+            border: 2px solid #2d6a4f;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+        }
+
+        .first-appear {
+            /* Teks highlight Hijau Mint */
+            color: #74c69d; 
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            /* Hijau Mint sedikit lebih terang untuk judul label */
+            color: #95d5b2; 
+        }
+
+        .value {
+            /* Putih kehijauan pucat untuk teks konten */
+            color: #d8f3dc; 
+        }
+
+        .section-break {
+            margin-top: 20px;
+            padding-top: 15px;
+            /* Garis pemisah Hijau Gelap */
+            border-top: 1px solid rgba(45, 106, 79, 0.6); 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menambahkan Div untuk Background Blur -->
+    <div class="bg-blur"></div>
+    <div class="bg-overlay"></div>
+
+    <nav>
+         <a href="index.html" style="text-decoration: none; color: inherit;">
+        <span>Character List</span>
+         </a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="Image/ken.png" alt="Ken">
+        </div>
+
+        <div class="info-section">
+            <span class="first-appear">First Appear: Episode 9</span>
+
+            <div class="info-row"><span class="label">Name:</span> <span class="value">Ken</span></div>
+            <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Ken</span></div>
+            <div class="info-row"><span class="label">Age:</span> <span class="value">30</span></div>
+            <div class="info-row"><span class="label">Height:</span> <span class="value">184</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Male</span></div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Side Character, Jendral Divisi 6</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row">
+                    <span class="label">Characteristics:</span> 
+                    <span class="value">Tegas dan selalu serius.</span>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">?</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">?</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Power:</span> <span class="value">Hand to Hand combat, basic Sword combat.</span></div>
+            </div>
+          <div class="section-break">
+                <div class="info-row">
+    <span class="label" style="display: block; margin-bottom: 5px;">Summary</span> 
+    <span class="value" style="display: block; line-height: 1.5;">Ken adalah Jendral Divisi 6, dikenal karena dia yang namanya paling simpel dan pendek bahkan terkesan gak niat. Rambutnya pendek, berwarna hijau tua.<br><br>
+
+Umurnya baru saja naik ke 30 tahun dan dia sudah menjabat sebagai Jendral selama 2 tahun. Dibandingkan yang lain, mungkin Ken adalah Jendral yang paling gak populer.<br><br>
+
+Walau tidak populer, Ken memiliki kekuatan yang paling hebat dan spesial. Fisiknya lumayan, dan yang paling spesial adalah dia memiliki RB bernama “LIFEorDEATH”<br><br>
+
+Ken dapat memanipulasi kehidupan dalam bentuk apapun, dia dapat menumbuhkan segala jenis pohon, jamur ataupun lainnya ditempat mana saja. Tak hanya itu, Ken juga dapat menciptakan segala jenis kehidupan mau itu tanaman ataupun hewan.<br><br>
+
+Memanipulasi kehidupan terdengar seperti main-main… Ken tak hanya bisa menciptakan, sesuai namanya Manipulasi… Ken dapat menghidupkan seseorang kembali dari kematian ataupun menciptakan manusia dari 0 menggunakan tangannya sendiri.<br><br>
+
+Ken juga dapat membunuh kehidupan manusia ataupun segala jenis kehidupan lainnya, hanya dengan menyentuhnya.<br><br>
+
+Namun ia dilarang keras melakukan itu, Ken dilarang sangat keras untuk menggunakan kekuatannya kepada manusia. Menghidupkan seseorang dari kematian ataupun menciptakan manusia dari 0, Ken dilarang melakukan itu oleh para petinggi dan para Jendral lainnya.</span>
+</div>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
