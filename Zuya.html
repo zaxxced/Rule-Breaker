@@ -10,54 +10,61 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: white;
+            /* Teks utama diubah menjadi biru laut sangat gelap (navy) agar mudah dibaca */
+            color: #002233; 
             min-height: 100vh;
             position: relative;
-            /* Hapus background color solid di sini */
         }
 
         /* --- TRIK BACKGROUND BLUR --- */
         /* 1. Latar Belakang Gambar yang Diblur */
         .bg-blur {
             position: fixed;
-            /* Ukuran dilebihkan (-5% sampai 110%) agar tepian layar tidak terlihat tajam saat diblur */
             top: -5%; 
             left: -5%;
             width: 110%;
             height: 110%;
-            background-image: url('Image/zuya.png'); /* Mengambil gambar karakter */
+            background-image: url('Image/zuya.png'); 
             background-size: cover;
             background-position: center;
-            filter: blur(50px); /* Efek blur yang sangat kuat */
-            z-index: -2; /* Taruh di layer paling bawah */
+            filter: blur(50px); 
+            z-index: -2; 
         }
 
-        /* 2. Lapisan Overlay Gelap agar teks tetap mudah dibaca */
+        /* 2. Lapisan Overlay Biru Langit Transparan */
         .bg-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            /* Warna biru gelap transparan (menyesuaikan warna tema sebelumnya) */
-            background-color: rgba(26, 66, 97, 0.65); 
+            /* Warna overlay biru langit cerah dengan transparansi 0.35 */
+            background-color: rgba(135, 206, 235, 0.35); 
             z-index: -1;
         }
         /* --------------------------- */
 
-        /* Navigasi atas (Biru Muda) */
+        /* Navigasi atas (Biru langit sangat pudar dengan aksen Biru Laut) */
         nav {
-            background-color: rgba(49, 152, 193, 0.85); /* Dibuat sedikit transparan agar estetik */
+            background-color: rgba(230, 245, 255, 0.95); 
             display: flex;
             justify-content: space-around;
             padding: 15px 0;
             font-size: 18px;
-            font-weight: 500;
-            backdrop-filter: blur(10px); /* Efek kaca untuk navbar */
+            font-weight: bold;
+            color: #006994; /* Teks biru laut */
+            border-bottom: 2px solid #006994; /* Garis bawah biru laut */
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         nav span {
             cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav span:hover {
+            color: #004b6b; /* Biru laut lebih gelap saat di-hover */
         }
 
         /* Container utama */
@@ -65,7 +72,7 @@
             max-width: 500px;
             margin: auto;
             padding: 20px;
-            position: relative; /* Penting agar container berada di atas background */
+            position: relative; 
             z-index: 1;
         }
 
@@ -75,8 +82,9 @@
             width: 100%;
             border-radius: 15px;
             overflow: hidden;
-            border: 2px solid rgba(255,255,255,0.3);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            /* Border Biru Laut */
+            border: 2px solid #006994;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
         }
 
         .image-card img {
@@ -84,45 +92,29 @@
             display: block;
         }
 
-        /* Overlay Nama di dalam Foto */
-        .name-overlay {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            color: #1a4261;
-            padding: 10px 20px;
-            border-radius: 5px;
-            line-height: 1.2;
-        }
-
-        .name-overlay .main-name {
-            font-size: 24px;
-            font-weight: bold;
-            display: block;
-        }
-
-        .name-overlay .sub-name {
-            font-size: 12px;
-            font-weight: bold;
-        }
-
         /* Bagian Teks Biodata */
         .info-section {
             margin-top: 20px;
             font-size: 16px;
             line-height: 1.6;
-            background: rgba(0, 0, 0, 0.3); /* Kotak transparan untuk teks agar lebih rapi */
+            /* Kotak info biru langit sangat pudar (mendekati putih) */
+            background: rgba(230, 245, 255, 0.85); 
             padding: 20px;
             border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.1);
+            /* Border Biru Laut */
+            border: 2px solid #006994;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            backdrop-filter: blur(8px);
         }
 
         .first-appear {
-            color: #9ec9e2;
+            /* Teks highlight Biru Laut gelap */
+            color: #004b6b; 
             font-weight: bold;
             margin-bottom: 15px;
             display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .info-row {
@@ -131,17 +123,20 @@
 
         .label {
             font-weight: bold;
-            color: #ffffff;
+            /* Biru Laut untuk judul label */
+            color: #006994; 
         }
 
         .value {
-            color: #d1e8f7;
+            /* Warna teks konten navy gelap */
+            color: #002233; 
         }
 
         .section-break {
             margin-top: 20px;
             padding-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1); /* Garis pemisah tipis */
+            /* Garis pemisah Biru Laut transparan */
+            border-top: 1px solid rgba(0, 105, 148, 0.4); 
         }
     </style>
 </head>
@@ -170,27 +165,43 @@
             <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Zuya</span></div>
             <div class="info-row"><span class="label">Age:</span> <span class="value">29</span></div>
             <div class="info-row"><span class="label">Height:</span> <span class="value">162</span></div>
-            <div class="info-row"><span class="label">Gender:</span> <span class="value">Male?</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Male</span></div>
 
             <div class="section-break">
-                <div class="info-row"><span class="label">Role:</span> <span class="value">Jendral Divisi 4</span></div>
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Side Character, Jendral Divisi 4</span></div>
             </div>
 
             <div class="section-break">
                 <div class="info-row">
                     <span class="label">Characteristics:</span> 
-                    <span class="value">ramah, suka godain dan bicaranya nyantai+lembut, Jendral paling populer di kalangan anak-anak, femboy, intinya kek femboy.</span>
+                    <span class="value">ramah, suka godain dan bicaranya nyantai dan lembut, Jendral paling populer di kalangan anak-anak, femboy.</span>
                 </div>
             </div>
 
             <div class="section-break">
-                <div class="info-row"><span class="label">Likes:</span> <span class="value">Semua orang.</span></div>
-                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">Cheater.</span></div>
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">Keimutan, berpakaian feminine, dan makanan manis.</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">Manusia yang tidak bisa menghargai sesama.</span></div>
             </div>
 
             <div class="section-break">
-                <div class="info-row"><span class="label">Power:</span> <span class="value">RB Manipulasi waktu.</span></div>
+                <div class="info-row"><span class="label">Power:</span> <span class="value">RB bernama "Time n Time" / "TnT"<br> Zuya dapat memanipulasi waktu.</span></div>
             </div>
+          <div class="section-break">
+                <div class="info-row">
+    <span class="label" style="display: block; margin-bottom: 5px;">Summary</span> 
+    <span class="value" style="display: block; line-height: 1.5;">Zuya adalah Jendral Divisi 7, dia yang paling imut diantara yang lain. Rambutnya yang berwarna biru dan wajahnya yang paling terlihat muda, membuat banyak orang pangling padahal dia adalah pria yang hampir menginjak umur 30.<br><br>
+
+        Penampilannya yang paling terlihat muda dari yang lain juga membuat dia Jendral yang paling disukai di kalangan anak-anak.<br><br>
+
+Dalam hal fisik dia tidak terlalu berotot ataupun maskulin seperti yang lain, malahan dia lebih terlihat seperti seorang wanita. Feminine Boy.<br><br>
+
+Tapi walau fisiknya yang paling lemah diantara para jendral, dia tidak boleh diremehkan. Memiliki RB bernama “Time n Time/TnT”<br><br>
+
+Zuya dapat memanipulasi waktu sesukanya. Memenjarakan orang dalam penjara waktu yang sangat lama, membekukan seseorang dalam waktu hingga terhenti, atau menyiksa seseorang seperti membuatnya mengalami penderitaan 1000 tahun padahal di waktu normal dia baru jalan 10 menit.<br><br>
+
+Tak hanya itu. Zuya juga bisa bermain-main dengan waktu tubuhnya, membuatnya dapat bergerak sangat cepat. Hmmm, mungkin ini alasan dia bisa terlihat lebih muda?</span>
+</div>
+          </div>
         </div>
 
     </div>
