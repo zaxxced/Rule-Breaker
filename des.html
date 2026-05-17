@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowall- Profile</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Teks utama diubah menjadi putih agar kontras dengan background gelap */
+            color: #ffffff; 
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* --- TRIK BACKGROUND BLUR --- */
+        /* 1. Latar Belakang Gambar yang Diblur */
+        .bg-blur {
+            position: fixed;
+            top: -5%; 
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background-image: url('Image/des.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(50px); 
+            z-index: -2; 
+        }
+
+        /* 2. Lapisan Overlay Biru Sangat Gelap */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Warna overlay biru gelap (navy) dengan transparansi 0.8 agar blur tetap tembus sedikit */
+            background-color: rgba(10, 24, 45, 0.3); 
+            z-index: -1;
+        }
+        /* --------------------------- */
+
+        /* Navigasi atas (Biru Gelap dengan aksen Biru Terang) */
+        nav {
+            background-color: rgba(15, 35, 60, 0.85); 
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #3b82f6; /* Teks biru terang */
+            border-bottom: 2px solid #3b82f6; /* Garis bawah biru terang */
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        nav span {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav span:hover {
+            color: #60a5fa; /* Biru yang lebih muda menyala saat di-hover */
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            position: relative; 
+            z-index: 1;
+        }
+
+        /* Frame Foto Karakter */
+        .image-card {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            /* Border Biru Terang */
+            border: 2px solid #3b82f6;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6); 
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Bagian Teks Biodata */
+        .info-section {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            /* Kotak info biru gelap transparan */
+            background: rgba(15, 35, 60, 0.75); 
+            padding: 20px;
+            border-radius: 15px;
+            /* Border Biru Terang */
+            border: 2px solid #3b82f6;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+        }
+
+        .first-appear {
+            /* Teks highlight Biru Terang */
+            color: #60a5fa; 
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            /* Biru terang untuk judul label */
+            color: #60a5fa; 
+        }
+
+        .value {
+            /* Warna teks konten putih terang atau sedikit keabu-abuan agar tidak menusuk mata */
+            color: #f8fafc; 
+        }
+
+        .section-break {
+            margin-top: 20px;
+            padding-top: 15px;
+            /* Garis pemisah Biru Terang transparan */
+            border-top: 1px solid rgba(59, 130, 246, 0.4); 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menambahkan Div untuk Background Blur -->
+    <div class="bg-blur"></div>
+    <div class="bg-overlay"></div>
+
+    <nav>
+         <a href="index.html" style="text-decoration: none; color: inherit;">
+        <span>Character List</span>
+         </a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="Image/des.png" alt="Knowall Des">
+        </div>
+
+        <div class="info-section">
+            <span class="first-appear">First Appear: Episode 13</span>
+
+            <div class="info-row"><span class="label">Name:</span> <span class="value">Knowall Des</span></div>
+            <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Des</span></div>
+            <div class="info-row"><span class="label">Age:</span> <span class="value">33</span></div>
+            <div class="info-row"><span class="label">Height:</span> <span class="value">178</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Male</span></div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Side Character, Jendral Divisi 3</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row">
+                    <span class="label">Characteristics:</span> 
+                    <span class="value">Tebar pesona tipis-tipis</span>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">Meet and greet bersama penggemarnya</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">?</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Power:</span> <span class="value">Advance sword combat, Strong Physics.</span></div>
+            </div>
+          <div class="section-break">
+                <div class="info-row">
+    <span class="label" style="display: block; margin-bottom: 5px;">Summary</span> 
+    <span class="value" style="display: block; line-height: 1.5;">Des adalah Jendral Divisi 3, dia yang paling cerdas di antara seluruh Jendral. Seorang pria yang memiliki rambut panjang berwarna biru gelap dan memakai kacamata.<br><br>
+
+Berumur 33 tahun dan memiliki pesona “cowo ganteng+pinter” membuatnya menjadi favorit di kalangan gadis muda. Dia juga sudah 3 tahun menjabat sebagai Jendral.<br><br>
+
+Sudah ganteng, pinter, kuat pula. Dia adalah satu-satunya jendral lelaki yang tak memiliki kekuatan spesial seperti RB.<br><br>
+
+Namun walau begitu, fisiknya sudah dilatih semenjak belia jadi membuatnya sangat berpengalaman. Cara berpikirnya yang cepat juga menjadi keunggulan tersendiri, sering membuat keputusan terbaik di situasi genting.<br><br>
+
+Dalam rapat-rapat pada Dewan pemerintahan, ataupun rapat sesama Jendral. Des adalah orang yang paling sering mengeluarkan keputusan terbaik dan rasional.</span>
+</div>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
