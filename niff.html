@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Niff - Profile</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Teks utama diubah menjadi cokelat sangat gelap agar nyaman dibaca */
+            color: #3e2723; 
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* --- TRIK BACKGROUND BLUR --- */
+        /* 1. Latar Belakang Gambar yang Diblur */
+        .bg-blur {
+            position: fixed;
+            top: -5%; 
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background-image: url('Image/niff.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(50px); 
+            z-index: -2; 
+        }
+
+        /* 2. Lapisan Overlay Krem */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Warna overlay krem dengan transparansi agar gambar blur tetap tembus */
+            background-color: rgba(253, 245, 230, 0.2); 
+            z-index: -1;
+        }
+        /* --------------------------- */
+
+        /* Navigasi atas (Krem dengan aksen Kuning Tua/Cokelat) */
+        nav {
+            background-color: rgba(253, 245, 230, 0.95); 
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #9e711c; /* Teks kuning tua/cokelat */
+            border-bottom: 2px solid #9e711c; /* Garis bawah kuning tua/cokelat */
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav span {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav span:hover {
+            color: #d4a347; /* Warna lebih terang saat di-hover */
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            position: relative; 
+            z-index: 1;
+        }
+
+        /* Frame Foto Karakter */
+        .image-card {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            /* Border Kuning Tua/Cokelat */
+            border: 2px solid #9e711c;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Bagian Teks Biodata */
+        .info-section {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            /* Kotak info krem transparan */
+            background: rgba(253, 245, 230, 0.75); 
+            padding: 20px;
+            border-radius: 15px;
+            /* Border Kuning Tua/Cokelat */
+            border: 2px solid #9e711c;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            backdrop-filter: blur(8px);
+        }
+
+        .first-appear {
+            /* Teks highlight Kuning Tua/Cokelat */
+            color: #8b5a2b; 
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            /* Cokelat untuk judul label */
+            color: #8b5a2b; 
+        }
+
+        .value {
+            /* Cokelat gelap untuk teks konten agar mudah dibaca */
+            color: #3e2723; 
+        }
+
+        .section-break {
+            margin-top: 20px;
+            padding-top: 15px;
+            /* Garis pemisah Kuning Tua/Cokelat sedikit transparan */
+            border-top: 1px solid rgba(158, 113, 28, 0.4); 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menambahkan Div untuk Background Blur -->
+    <div class="bg-blur"></div>
+    <div class="bg-overlay"></div>
+
+    <nav>
+         <a href="index.html" style="text-decoration: none; color: inherit;">
+        <span>Character List</span>
+         </a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="Image/niff.png" alt="Sir Niff">
+        </div>
+
+        <div class="info-section">
+            <span class="first-appear">First Appear: Episode 9</span>
+
+            <div class="info-row"><span class="label">Name:</span> <span class="value">Sir Niff</span></div>
+            <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Niff</span></div>
+            <div class="info-row"><span class="label">Age:</span> <span class="value">27</span></div>
+            <div class="info-row"><span class="label">Height:</span> <span class="value">185</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Male</span></div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Side Character, Jendral Divisi 7</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row">
+                    <span class="label">Characteristics:</span> 
+                    <span class="value">Ramah, peduli akan semua orang apalagi pada bawahannya.</span>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">Salju.</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">Cheater.</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Power:</span> <span class="value">RB "Flow Space"<br> Dapat memanipulasi ruang sesuka hatinya..</span></div>
+            </div>
+          <div class="section-break">
+                <div class="info-row">
+    <span class="label" style="display: block; margin-bottom: 5px;">Summary</span> 
+    <span class="value" style="display: block; line-height: 1.5;">Niff adalah Jendral Divisi 7, dia adalah Jendral termuda di antara yang lain. Dia saja baru 1 tahun menjabat sebagai seorang Jendral.<br>
+
+Niff adalah seorang pria berumur 27 tahun, berambut pendek seperti Ken berwarna krem seperti Nana, tentu dia juga tampan.<br>
+
+Kepopuleran Niff juga lumayan, dia dikenal sebagai Anti Cheater paling berbakat dalam satu dekade terakhir. Memiliki fisik luar biasa kuat, ketahanan tubuh yang diluar akal, juga kecepatan bertarung yang seperti cahaya.<br>
+
+Niff juga memiliki RB bernama “Flow Space”<br>
+
+Niff dapat memanipulasi ruang disekitarnya dalam jarak maksimal 1 kilometer. Tentu jika dia bisa memanipulasi ruang dia juga bisa memanipulasi waktu. Dia juga dapat membengkokkan ruang di sekitarnya hingga serangan apapun tak akan pernah sampai kepadanya.
+<br>
+Niff juga dapat memotong ruang, membuatnya bisa berada langsung di tempat yang ia mau asal tidak dihalangi suatu objek.<br>
+
+RB super kuat miliknya ini jika terus diasah bisa jadi sangat kuat, bahkan kemungkinan Niff dapat membuat sebuah blackhole dengan Manipulasi ruang miliknya.
+      .</span>
+</div>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
