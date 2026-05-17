@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minakata Mita - Profile</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Teks utama diubah menjadi abu-abu gelap dengan sedikit hint merah agar menyatu */
+            color: #4a3b3b; 
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* --- TRIK BACKGROUND BLUR --- */
+        /* 1. Latar Belakang Gambar yang Diblur */
+        .bg-blur {
+            position: fixed;
+            top: -5%; 
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background-image: url('Image/mita.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(50px); 
+            z-index: -2; 
+        }
+
+        /* 2. Lapisan Overlay Putih Transparan */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Warna overlay putih transparan agar gambar blur tetap terlihat */
+            background-color: rgba(255, 255, 255, 0.35); 
+            z-index: -1;
+        }
+        /* --------------------------- */
+
+        /* Navigasi atas (Putih dengan aksen Merah Soft/Rose) */
+        nav {
+            background-color: rgba(255, 255, 255, 0.95); 
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #c57575; /* Teks merah soft elegan */
+            border-bottom: 2px solid #c57575; /* Garis bawah merah soft */
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav span {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav span:hover {
+            color: #a35d5d; /* Merah soft yang sedikit lebih pekat saat di-hover */
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            position: relative; 
+            z-index: 1;
+        }
+
+        /* Frame Foto Karakter */
+        .image-card {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            /* Border Merah Soft Elegan */
+            border: 2px solid #c57575;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Bagian Teks Biodata */
+        .info-section {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            /* Kotak info putih sedikit transparan */
+            background: rgba(255, 255, 255, 0.85); 
+            padding: 20px;
+            border-radius: 15px;
+            /* Border Merah Soft Elegan */
+            border: 2px solid #c57575;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            backdrop-filter: blur(8px);
+        }
+
+        .first-appear {
+            /* Teks highlight Merah Soft yang lebih tegas */
+            color: #a35d5d; 
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            /* Merah soft untuk judul label */
+            color: #c57575; 
+        }
+
+        .value {
+            /* Warna teks konten abu-abu gelap kemerahan */
+            color: #4a3b3b; 
+        }
+
+        .section-break {
+            margin-top: 20px;
+            padding-top: 15px;
+            /* Garis pemisah Merah Soft transparan */
+            border-top: 1px solid rgba(197, 117, 117, 0.4); 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menambahkan Div untuk Background Blur -->
+    <div class="bg-blur"></div>
+    <div class="bg-overlay"></div>
+
+    <nav>
+         <a href="index.html" style="text-decoration: none; color: inherit;">
+        <span>Character List</span>
+         </a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="Image/mita.png" alt="Minakata Mita">
+        </div>
+
+        <div class="info-section">
+            <span class="first-appear">First Appear: Episode 13</span>
+
+            <div class="info-row"><span class="label">Name:</span> <span class="value">Minakata Mita</span></div>
+            <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Mita</span></div>
+            <div class="info-row"><span class="label">Age:</span> <span class="value">34</span></div>
+            <div class="info-row"><span class="label">Height:</span> <span class="value">180</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Female</span></div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Side Character, Jendral Divisi 5</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row">
+                    <span class="label">Characteristics:</span> 
+                    <span class="value">Elegan, sangat cantik dengan rambut merahnya yang digerai.</span>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">Keeleganan dan Tata krama.</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">Orang yang berpakaian tidak rapih dan tak memiliki tata krama.</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Power:</span> <span class="value">RB bernama "Will Flame<br> Mita dapat memanipulasi segala jenis api.</span></div>
+            </div>
+          <div class="section-break">
+                <div class="info-row">
+    <span class="label" style="display: block; margin-bottom: 5px;">Summary</span> 
+    <span class="value" style="display: block; line-height: 1.5;">Mita adalah Jendral Divisi 5, dia adalah Jendral wanita berambut panjang dengan warna merah yang sangat cantik. Saat ini Mita berumur 34 dan sudah menjabat sebagai Jendral selama 5 tahun.<br><br>
+
+Di umurnya yang ke 34, pesona Mita tentu tak pernah luntur. Berkebalikan dengan Rerin yang mencolok dan seksi, Mita adalah seorang yang terlihat lebih elegan dan kurang mencolok.<br><br>
+
+Namun karna itulah dia juga disukai oleh kalangan anak muda, rambut merah indahnya digabung dengan cara berpakaian yang elegan dan simpel serta sifatnya yang mengutamakan adab membuatnya sangat cocok menyandang gelar “Enbellia”<br><br>
+
+Selain pesonanya, kekuatan fisik dan daya tahan tubuhnya juga bukan main. Mita juga memiliki RB bernama “Will Flame”<br><br>
+
+RB yang berkekuatan memanipulasi api. Mita dapat menciptakan api, menyemburkan api, memadamkan api, dia dapat melakukan apapun pada api yang ia lihat. Mita adalah ibu dari seluruh api di bumi.<br><br>
+
+Suhu apinya juga bukan sembarangan. Semakin tinggi keinginannya untuk menang maka suhunya akan terus meningkat hingga ke titik teknologi tercanggih manusia pun tak mungkin menggapainya.</span>
+</div>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
