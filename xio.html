@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theiamoon Xihoose - Profile</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Teks utama diubah menjadi marun sangat gelap agar kontras dan nyaman dibaca di background soft pink */
+            color: #4a2c35; 
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* --- TRIK BACKGROUND BLUR --- */
+        /* 1. Latar Belakang Gambar yang Diblur */
+        .bg-blur {
+            position: fixed;
+            top: -5%; 
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background-image: url('Image/xio.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(50px); 
+            z-index: -2; 
+        }
+
+        /* 2. Lapisan Overlay Soft Pink Transparan */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Warna overlay soft pink transparan agar gambar blur tetap terlihat manis */
+            background-color: rgba(255, 235, 240, 0.3); 
+            z-index: -1;
+        }
+        /* --------------------------- */
+
+        /* Navigasi atas (Soft pink keputihan dengan aksen Pink) */
+        nav {
+            background-color: rgba(255, 245, 248, 0.95); 
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #d6456f; /* Teks pink pekat */
+            border-bottom: 2px solid #ff7da1; /* Garis bawah pink */
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav span {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav span:hover {
+            color: #b03056; /* Pink lebih gelap/marun saat di-hover */
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            position: relative; 
+            z-index: 1;
+        }
+
+        /* Frame Foto Karakter */
+        .image-card {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            /* Border Pink */
+            border: 2px solid #ff7da1;
+            box-shadow: 0 10px 30px rgba(255, 125, 161, 0.15); /* Shadow dengan sedikit sentuhan pink */
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Bagian Teks Biodata */
+        .info-section {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            /* Kotak info soft pink agak transparan */
+            background: rgba(255, 245, 248, 0.85); 
+            padding: 20px;
+            border-radius: 15px;
+            /* Border Pink */
+            border: 2px solid #ff7da1;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            backdrop-filter: blur(8px);
+        }
+
+        .first-appear {
+            /* Teks highlight pink pekat */
+            color: #d6456f; 
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+
+        .label {
+            font-weight: bold;
+            /* Pink pekat untuk judul label */
+            color: #d6456f; 
+        }
+
+        .value {
+            /* Warna teks konten merah muda kehitaman agar sangat jelas */
+            color: #4a2c35; 
+        }
+
+        .section-break {
+            margin-top: 20px;
+            padding-top: 15px;
+            /* Garis pemisah Pink transparan */
+            border-top: 1px solid rgba(255, 125, 161, 0.4); 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menambahkan Div untuk Background Blur -->
+    <div class="bg-blur"></div>
+    <div class="bg-overlay"></div>
+
+    <nav>
+         <a href="index.html" style="text-decoration: none; color: inherit;">
+        <span>Character List</span>
+         </a>
+    </nav>
+
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="Image/xio.png" alt="Theiamoon Xihoose">
+        </div>
+
+        <div class="info-section">
+            <span class="first-appear">First Appear: Episode 6</span>
+
+            <div class="info-row"><span class="label">Name:</span> <span class="value">Theiamoon Xihoose</span></div>
+            <div class="info-row"><span class="label">Pseudonym:</span> <span class="value">Xio</span></div>
+            <div class="info-row"><span class="label">Age:</span> <span class="value">19</span></div>
+            <div class="info-row"><span class="label">Height:</span> <span class="value">170</span></div>
+            <div class="info-row"><span class="label">Gender:</span> <span class="value">Female</span></div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Role:</span> <span class="value">Side Character, Anggota Divisi 7</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row">
+                    <span class="label">Characteristics:</span> 
+                    <span class="value">Ramah, asik, extrovert, kek gyaru dikit, serius max ketika bertarung atau dalam situasi genting.</span>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Likes:</span> <span class="value">Make up, Hair coloring, Jewelry, Martabak, Cake, Faedil.</span></div>
+                <div class="info-row"><span class="label">Dislikes:</span> <span class="value">?</span></div>
+            </div>
+
+            <div class="section-break">
+                <div class="info-row"><span class="label">Power:</span> <span class="value">RB bernama "Heallove"<br> Berkemampuan untuk menyembuhkan luka ringan hingga berat (tidak dapat meregenerasi bagian yang hilang).</span></div>
+            </div>
+          <div class="section-break">
+                <div class="info-row">
+    <span class="label" style="display: block; margin-bottom: 5px;">Summary</span> 
+    <span class="value" style="display: block; line-height: 1.5;">Gadis imut extrovert.</span>
+</div>
+          </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
