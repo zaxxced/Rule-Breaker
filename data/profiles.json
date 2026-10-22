@@ -220,5 +220,195 @@
     "summary": [
       "Gadis imut extrovert."
     ]
+  },
+  "rayas": {
+    "firstAppear": "Episode 2",
+    "name": "Ray Assasino",
+    "pseudonym": "Rayas",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Anggota Divisi 7",
+    "characteristics": "Percaya diri, arogan, gengsinya tinggi, tapi menyimpan luka lama.",
+    "likes": "Neskape ice black",
+    "dislikes": "?",
+    "power": "RB Manipulasi pasir.\nSandbox: Absolute Defense (pertahanan mutlak dalam radius 15 meter, berbentuk kubah pasir).\nSand: Drill (bor pasir tajam).",
+    "summary": [
+      "Ray Assasino, dengan pseudonym Rayas, adalah peserta besar berkulit agak gelap yang pertama kali terlihat di antrean pendaftaran Ujian Anti Cheater. Di arena ia sempat menjadi lawan Faedil dan kalah, lalu bergabung dalam tim Rivers.",
+      "Di masa SMP, Rayas tidak punya banyak teman, kecuali seorang kakak kelas bernama Neva. Ia berubah saat SMA dengan tekad mendekatinya, dan menyatakan perasaan saat kelulusan Neva. Ditolak, karena Neva menganggapnya seperti adik. Neva kemudian bertunangan dengan Kadena Aiden, dan Rayas memendam luka itu.",
+      "Di arc Calvera, Rayas dikalahkan Zeronixia Killa dengan telak dan terluka parah. Ia menyimpan dendam pada Caesar yang menikamnya dari belakang saat ujian."
+    ],
+    "slug": "rayas"
+  },
+  "caesar": {
+    "firstAppear": "Episode 4",
+    "name": "Julius Caesar",
+    "pseudonym": "Caesar",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Cheater (Debutan)",
+    "characteristics": "Dingin, cuek, tidak mudah percaya, dan menyimpan amarah yang dalam.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Menghilang (tembus pandang selama ±3 detik). RB nonaktif setiap kali ia menyerang.\nSetelah berkembang, ia bisa menyerang tanpa menampakkan diri.",
+    "summary": [
+      "Julius Caesar adalah peserta berambut coklat yang tampan namun dingin. Ia pertama kali bertemu Arkha di arena ujian dan kalah darinya, lalu diajak bekerja sama dengan syarat tidak saling dipercaya.",
+      "Caesar menjadi pengkhianat di puncak bukit saat ujian. Ia mengatakan tujuannya hanya satu, yaitu mengincar \"dia\" seorang, dan rela menikam Rayas serta melukai Arkha dengan parah. Setelah itu ia pergi bersama Kultus Suci.",
+      "Menurut Des, Caesar adalah debutan berbahaya yang kemungkinan setara kelas A. Ia terlihat berada di bawah pengaruh Kila, karena ia pernah ditarik dan dipatuhkan dengan bisikan manipulasi pikiran."
+    ],
+    "slug": "caesar"
+  },
+  "kila": {
+    "firstAppear": "Episode 6",
+    "name": "Zeronixia Killa",
+    "pseudonym": "Kila",
+    "age": "?",
+    "height": "?",
+    "gender": "Female",
+    "role": "Cheater",
+    "characteristics": "Ceria secara permukaan, manipulatif, dan sangat kejam. Senang mempermainkan lawannya.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Manipulasi Pikiran. Bisikan lembutnya bisa membuat orang terdiam dan patuh, dan ia juga bisa menimpa ingatan seseorang.\nKecepatan subsonik.\nABOMINATION: memanggil makhluk humanoid hitam dari saluran air bawah tanah Calvera.",
+    "summary": [
+      "Zeronixia Killa, dengan pseudonym Kila, adalah peserta berambut hitam dikuncir dua yang menghilang dari pengawasan kamera pada hari kelima ujian. Ia membantai banyak peserta dengan kejam dan menyebut dirinya \"menjemput seseorang\".",
+      "Kila tergabung dalam Kultus Suci. Ia pernah mengalahkan Nana di bukit, tapi tidak bisa menembus mental Nana. Dalam Arc Calvera, ia memerintahkan kelompoknya melepaskan makhluk humanoid, serta menimpa ingatan Arkha dengan sangat kejam.",
+      "Des menilai Kila sudah setara kelas A sejak awal. Mauro menyebut kemungkinan Kila kelas A atau S, dan keberadaannya sudah lama disembunyikan oleh kelompoknya."
+    ],
+    "slug": "kila"
+  },
+  "mauro": {
+    "firstAppear": "Episode 11",
+    "name": "Mauro Heisenberg",
+    "pseudonym": "Mauro",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Cheater kelas A",
+    "characteristics": "Santai, suka meremehkan orang lain, dan licik.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Warp: berteleportasi tanpa suara.\nABOMINATION: menyatukan cairan hitam makhluk itu dengan tubuhnya, membentuk cakar dan sarung tangan.",
+    "summary": [
+      "Mauro Heisenberg adalah Cheater kelas A yang sudah diburu Anti Cheater selama dua tahun karena selalu berhasil menghilang. Ia datang menyelamatkan Kila dan membawa Caesar pergi.",
+      "Mauro bergabung dengan Kultus Suci dan sengaja menutup akses Warp Nay. Di Calvera ia melawan Faedil dengan tangan kosong sambil tersenyum, dan memakai kekuatan Abomination yang mengubah tubuhnya.",
+      "Ia menjadi salah satu lawan terkuat yang pernah dihadapi Faedil."
+    ],
+    "slug": "mauro"
+  },
+  "maran": {
+    "firstAppear": "Episode 19",
+    "name": "Mikawara Maraniaki",
+    "pseudonym": "Maran",
+    "age": "21",
+    "height": "?",
+    "gender": "Female",
+    "role": "Putri Presiden",
+    "characteristics": "Sombong, suka bercanda, dan pura-pura santai. Di balik itu ia rapuh dan takut.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Limit Breaker: menghancurkan batasan seseorang. Pada manusia biasa, ia membuatnya melampaui atlet. Pada pengguna RB, kekuatannya bisa menyamai Letjen atau Jendral. Hanya aktif saat terjadi kontak fisik.",
+    "summary": [
+      "Mikawara Maraniaki adalah putri ketiga presiden berumur 21 tahun, dengan rambut coklat panjang dan gaya yang mencolok. Ia menyebut Divisi 7 sebagai divisi terlemah dan sempat bersikap meremehkan, meski sebenarnya tidak sepenuhnya buruk.",
+      "Ia dikawal Team Rivers ke Calvera, namun pesawatnya diserang dan ia diculik oleh Kultus Suci. Arkha menyelamatkannya dari ledakan, sebelum ia dibawa oleh Vinzo.",
+      "Maran kemudian dipaksa menggunakan RB-nya untuk Vinzo, dan bergabung dengan Kultus Suci. Bayangan kegelapan mereka menyelubungi seluruh Calvera."
+    ],
+    "slug": "maran"
+  },
+  "yume": {
+    "firstAppear": "Episode 20",
+    "name": "Yume",
+    "pseudonym": "Yume",
+    "age": "?",
+    "height": "?",
+    "gender": "Female",
+    "role": "Kultus Suci",
+    "characteristics": "Ceria dengan cara yang mengerikan, bertingkah seperti anak kecil, dan tidak punya belas kasihan.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "Belum diketahui. Ia terlihat memakai pisau kecil.",
+    "summary": [
+      "Yume berambut putih dan dulunya adalah sahabat masa kecil Arkha bersama Runza. Ia lembut dan selalu membantu Arkha dari belakang. Saat Arkha pindah, ia dan Runza tetap menjalin hubungan sampai akhirnya kabar mereka terputus.",
+      "Ia kini dikenal sebagai \"Si Cewek Gila\" dalam Kultus Suci. Ia ikut menyiksa ingatan Arkha, dan bersama Harith ia menahan Nana di Menara Jam Agung Calvera.",
+      "Yume menjadi bukti bahwa masa kecil yang manis bisa berubah menjadi tragedi, dan ia menjadi salah satu musuh yang paling sulit dihadapi Arkha secara emosional."
+    ],
+    "slug": "yume"
+  },
+  "nay": {
+    "firstAppear": "Episode 9",
+    "name": "Centauri Naeya",
+    "pseudonym": "Nay",
+    "age": "?",
+    "height": "?",
+    "gender": "Female",
+    "role": "Letjen Divisi 6",
+    "characteristics": "Tegang dan cepat panik, tapi disiplin dan bertanggung jawab.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Warp. Ia bisa berteleportasi, tetapi tidak bisa ke arena ujian karena aksesnya diblokir oleh Mauro.",
+    "summary": [
+      "Centauri Naeya, dengan pseudonym Nay, adalah Letjen Divisi 6 yang berambut pink. Ia dipanggil oleh Jendral Ken untuk mencari bantuan saat ujian kacau, dan berangkat bersama Noe.",
+      "Nay dekat dengan Nana. Ia sering gugup di depan para Jendral, tetapi tetap menjalankan tugasnya dengan baik. Saat menyelamatkan peserta yang tersisa, ia membawa mereka pergi dengan Warp.",
+      "Mauro sempat mengejeknya soal aksesnya yang diblokir, dan Noe menenangkannya."
+    ],
+    "slug": "nay"
+  },
+  "pucie": {
+    "firstAppear": "Episode 14",
+    "name": "Pucie Van Calvera",
+    "pseudonym": "Pucie",
+    "age": "?",
+    "height": "?",
+    "gender": "Berubah-ubah (RB)",
+    "role": "Anggota Divisi 7",
+    "characteristics": "Cerdas, sedikit usil, dan sangat tertarik pada sains dan eksperimen.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Ganti Gender, maksimal dua kali sehari. Mode cewek membantu berpikir dan eksperimen. Mode cowok dipakai untuk misi. Ia juga pandai meracik cairan penyembuh dan racun.",
+    "summary": [
+      "Pucie Van Calvera lahir dan besar di kota Calvera, dan merupakan peneliti di gedung lab Divisi 7. Ia dikenal dengan sifat usil dan kebiasaan mengubah penampilan lewat RB-nya.",
+      "Ia membuat cairan penyembuh yang menyelamatkan Arkha dan teman-temannya, serta mengajar mereka tentang RB masing-masing. Ia juga kembali ke Calvera bersama Team Rivers dan melawan makhluk humanoid bersama Fazz dan Zuma.",
+      "Pucie menyimpan perasaan lain tentang kota kelahirannya, yang belum sepenuhnya terungkap."
+    ],
+    "slug": "pucie"
+  },
+  "fazz": {
+    "firstAppear": "Episode 15",
+    "name": "Hajime Fazzumi",
+    "pseudonym": "Fazz",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Anggota Divisi 7",
+    "characteristics": "Santai, tenang, dan sedikit pendiam. Mudah tegang saat RB-nya lepas kendali.",
+    "likes": "Es jeruk",
+    "dislikes": "?",
+    "power": "RB Manipulasi es. Kekuatannya kuat, tetapi Fazz sulit mengendalikannya dan sering kelepasan.",
+    "summary": [
+      "Hajime Fazzumi, dengan pseudonym Fazz, adalah anggota Divisi 7 berambut hitam yang santai. Ia sudah bersahabat dengan Zuma sejak masih zigot.",
+      "Ia sadar punya RB sejak umur 18, saat air di gelasnya tiba-tiba membeku. Ia sering kehilangan kendali dan membuat orang lain repot, tetapi terus berlatih.",
+      "Di Calvera ia membantu melawan makhluk humanoid dengan membekukan mereka, dan selalu siap mendukung rekan-rekannya."
+    ],
+    "slug": "fazz"
+  },
+  "zuma": {
+    "firstAppear": "Episode 15",
+    "name": "Kazuma Zuma",
+    "pseudonym": "Zuma",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Anggota Divisi 7",
+    "characteristics": "Humoris, ramah, dan sangat berisik. Pandai menghibur orang lain.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Eagle Eye: melihat objek dari jauh dengan jelas, muncul sejak umur 13.\nPeluru \"Perfect Shoot\": peluru hijau yang menghitung jarak, angin, dan akurasi tembakan.",
+    "summary": [
+      "Kazuma Zuma, dengan pseudonym Zuma, adalah anggota Divisi 7 berambut putih yang humoris dan sangat semangat. Ia sudah berteman dengan Fazz sejak masih zigot.",
+      "RB-nya muncul sejak umur 13, dan ia menggunakan pistol kecil untuk menembak dengan presisi tinggi. Ia pernah ditugaskan misi kelas A dan gagal, sehingga Divisi 7 dianggap lemah.",
+      "Di Calvera ia menembak kepala makhluk humanoid dengan peluru hijau, dan membantu tim menjaga rekan yang terluka."
+    ],
+    "slug": "zuma"
   }
 }
