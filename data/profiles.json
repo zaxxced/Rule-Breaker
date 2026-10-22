@@ -410,5 +410,176 @@
       "Di Calvera ia menembak kepala makhluk humanoid dengan peluru hijau, dan membantu tim menjaga rekan yang terluka."
     ],
     "slug": "zuma"
+  },
+  "kafka": {
+    "firstAppear": "Episode 25",
+    "name": "Kafka",
+    "pseudonym": "Kafka",
+    "age": "?",
+    "height": "?",
+    "gender": "Female",
+    "role": "Letjen Divisi 3",
+    "characteristics": "Santai dan percaya diri, tapi tegas dan dingin saat menegur. Sangat dekat dengan anak-anak panti.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Gagak: tangan kanannya berubah menjadi ribuan gagak. Gagak-gagak itu bisa menyerang dan memakan musuh, dan kembali menyatu ke tangannya. Ia juga bisa berbagi penglihatan dengan gagaknya.",
+    "summary": [
+      "Kafka adalah Letjen Divisi 3 yang bertugas di Calvera saat sedang berlibur. Ia muncul di tengah badai salju saat Pucie, Fazz, dan Zuma kewalahan melawan makhluk humanoid, lalu membantai mereka dengan gagak-gagaknya.",
+      "Ia membawa tim ke panti asuhan yang ia rawat, dan dekat dengan anak-anak di sana, terutama Sena yang selalu menunggu kepulangannya. Ia juga keras pada Fazz dan Zuma saat mempertanyakan kelayakan mereka sebagai Anti Cheater.",
+      "Dalam pencarian Arkha dan Maran, ia menyebarkan gagaknya ke seluruh saluran air bawah tanah Calvera, dan ikut membantu menghabisi makhluk humanoid di kota."
+    ],
+    "slug": "kafka"
+  },
+  "harith": {
+    "firstAppear": "Episode 26",
+    "name": "Harith",
+    "pseudonym": "Parallax",
+    "age": "33",
+    "height": "?",
+    "gender": "Male",
+    "role": "Cheater",
+    "characteristics": "Kejam, mengintimidasi, dan tidak punya belas kasihan. Senang membuat orang lain ketakutan.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Manipulasi gravitasi. Ia bisa menekan lawan hingga tak bisa bergerak dan menghantam dengan tekanan yang sangat berat.",
+    "summary": [
+      "Harith adalah pria berumur sekitar 33 tahun dengan jenggot dan kumis tebal, rambut belah tengah, dan jas yang selalu rapi. Ia adalah anggota Kultus Suci yang muncul saat Maran dan anak-anak panti sedang berada dalam bahaya.",
+      "Ia menyerang Maran dengan kejam dan menghina Arkha. Arkha sendiri menganggap Harith sebagai orang yang menghancurkan hidup Runza dan Yume, sehingga pertarungan mereka terasa sangat pribadi.",
+      "Di Menara Jam Agung Calvera, Harith bertarung bersama Yume melawan Nana. Pedang Nana sempat berhenti tepat satu inci dari lehernya."
+    ],
+    "slug": "harith"
+  },
+  "vinzo": {
+    "firstAppear": "Episode 28",
+    "name": "Stormblitza Vinzo",
+    "pseudonym": "Vinzo",
+    "age": "25",
+    "height": "?",
+    "gender": "Male",
+    "role": "Cheater",
+    "characteristics": "Tenang, dingin, dan sangat percaya diri. Tampak menawan, tetapi selalu memanipulasi orang di sekitarnya.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "Dark Matter: menciptakan kegelapan absolut yang bisa menyelimuti seluruh kota. Kekuatan ini semakin besar saat bersatu dengan Maran melalui Limit Breaker.",
+    "summary": [
+      "Stormblitza Vinzo, yang sering dipanggil Vin, adalah pemuda berambut putih pendek berumur sekitar 25 tahun. Ia menculik Maran dan memaksanya menggunakan Limit Breaker untuk dirinya, dengan ancaman akan menghancurkan Calvera.",
+      "Vinzo menggabungkan kekuatannya dengan Maran hingga membentuk kubah kegelapan yang menutup seluruh Calvera. Ia juga mengubah Maran dan dirinya menjadi raja dan ratu Kultus Suci.",
+      "Ia memimpin Kultus Suci di Menara Jam Agung, dan menganggap pertarungan melawan Tim Rivers sebagai ujian dari kekuatannya sendiri."
+    ],
+    "slug": "vinzo"
+  },
+  "hiro": {
+    "firstAppear": "Episode 32",
+    "name": "Narua Hiro",
+    "pseudonym": "Hiro",
+    "age": "?",
+    "height": "?",
+    "gender": "?",
+    "role": "Letjen Divisi 7",
+    "characteristics": "Tenang, teliti, dan sangat peduli pada rekan-rekannya.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "?",
+    "summary": [
+      "Narua Hiro adalah Letjen Divisi 7 berambut hitam. Ia sudah dibicarakan sejak awal sebagai Letjen yang sedang menjalankan misi, sehingga kursinya di rapat Jendral sering kosong.",
+      "Saat Calvera tidak bisa dihubungi, Hiro-lah yang menghubungi satu per satu anggota dan berusaha melacak keberadaan mereka lewat kamera satelit bersama Niff.",
+      "Ia sangat mengkhawatirkan Nana, dan merasa Nana adalah orang penting yang harus selamat."
+    ],
+    "slug": "hiro"
+  },
+  "arsa": {
+    "firstAppear": "Episode 15",
+    "name": "Prisma Arsa",
+    "pseudonym": "Arsa",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Anggota Divisi 7",
+    "characteristics": "Ramah dan tenang, dan selalu berusaha menjaga suasana tetap nyaman.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "?",
+    "summary": [
+      "Prisma Arsa adalah anggota Divisi 7 berambut putih dengan aksen merah yang mencolok. Ia termasuk dalam rombongan Team Rivers dan ikut menyambut Arkha dkk saat mereka lulus.",
+      "Ia ikut dalam misi mengawal putri presiden ke Calvera. Saat pesawat meledak dan ia dihajar makhluk humanoid di salju, ia terluka parah di pelipis, dan dibawa ke rumah sakit bersama Pucie, Fazz, dan Zuma.",
+      "Ia sadar kembali setelah Kafka mengurus para makhluk itu, dan memilih beristirahat di rumah sakit."
+    ],
+    "slug": "arsa"
+  },
+  "azel": {
+    "firstAppear": "Episode 15",
+    "name": "Azalea Amira",
+    "pseudonym": "Azel",
+    "age": "?",
+    "height": "?",
+    "gender": "Female",
+    "role": "Anggota Divisi 7",
+    "characteristics": "Tegas dan serius. Sering mengingatkan rekannya agar tidak meremehkan misi.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "?",
+    "summary": [
+      "Azalea Amira, dengan pseudonym Azel, adalah anggota Divisi 7 berambut hitam sedang yang memakai kacamata. Ia salah satu anggota wanita pertama yang menyambut Xio saat tiba di asrama.",
+      "Dalam latihan, ia sering berlatih bersama Xio. Di Calvera, dialah yang pertama bangun setelah ledakan dan membawa Xio serta Faedil ke penginapan.",
+      "Ia juga yang menjelaskan kepada yang lain bahwa jaringan komunikasi mereka lumpuh karena EMP."
+    ],
+    "slug": "azel"
+  },
+  "safira": {
+    "firstAppear": "Episode 2",
+    "name": "Safira",
+    "pseudonym": "?",
+    "age": "15",
+    "height": "?",
+    "gender": "Female",
+    "role": "Adik Arkha",
+    "characteristics": "Ceria, cerewet, dan sangat peduli pada kakaknya. Berpura-pura galak tapi sebenarnya khawatir.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "?",
+    "summary": [
+      "Safira adalah adik kandung Arkha yang berumur 15 tahun dan berambut hitam panjang. Sejak orang tua mereka meninggal dalam kebakaran, ia tinggal bersama Arkha dan selalu menjadi orang yang paling dekat dengannya.",
+      "Ketika Arkha memutuskan mengikuti ujian Anti Cheater, Safira sempat keberatan karena akan kesepian. Namun ia tetap memberi semangat dan menyuruh kakaknya berangkat tanpa ragu.",
+      "Safira kemudian tinggal sendirian di rumah mereka, sambil terus berharap Arkha kembali dengan selamat."
+    ],
+    "slug": "safira"
+  },
+  "runza": {
+    "firstAppear": "Episode 26",
+    "name": "Runza",
+    "pseudonym": "?",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Sahabat masa kecil Arkha",
+    "characteristics": "Bandel dan usil, tapi setia. Selalu berada di barisan paling depan untuk membela Arkha.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "RB Api. Kekuatan ini diwariskan kepada Arkha saat Arkha hampir mati di Menara Jam Agung Calvera.",
+    "summary": [
+      "Runza adalah sahabat masa kecil Arkha, bersama Yume. Ia anak yang usil kepada Arkha, tetapi selalu maju paling depan saat Arkha dalam bahaya, termasuk saat Arkha berkelahi dengan anak lain.",
+      "Runza dan Yume menjalin hubungan saat mereka SMP. Kabar terakhir darinya datang saat Arkha berumur 15 tahun, sebelum akhirnya mereka berdua hilang di kota Runza tinggal.",
+      "Arkha melihat kembali ingatan tragis tentang Runza, yang ditembak mati oleh seorang pelaku. Di alam bawah sadar saat Arkha hampir mati, Runza mewariskan api kepadanya."
+    ],
+    "slug": "runza"
+  },
+  "noe": {
+    "firstAppear": "Episode 9",
+    "name": "Catalytic Noe",
+    "pseudonym": "Noe",
+    "age": "?",
+    "height": "?",
+    "gender": "Male",
+    "role": "Letjen Divisi 6",
+    "characteristics": "Tenang dan tegas, tapi peduli pada rekan-rekannya. Auranya terasa sangat berat saat ia marah.",
+    "likes": "?",
+    "dislikes": "?",
+    "power": "Cairan penyembuh berwarna merah gelap yang dibawa dalam koper. Cairannya dapat menyembuhkan tulang yang remuk dan luka tusuk, bahkan lebih cepat daripada RB penyembuh Xio.",
+    "summary": [
+      "Catalytic Noe adalah Letjen Divisi 6 berambut pendek berwarna coklat. Ia dipinjam oleh Jendral Niff dan ikut berangkat bersama Nay untuk membantu di lokasi ujian.",
+      "Di puncak bukit, ia menggunakan cairan penyembuh dari kopernya untuk menyelamatkan Faedil, Arkha, dan rekan lainnya. Ia juga menghadang Caesar agar bisa mencapai Arkha.",
+      "Noe dikenal lembut kepada Nay, tetapi tegas dan berwibawa saat menghadapi Kultus Suci."
+    ],
+    "slug": "noe"
   }
 }

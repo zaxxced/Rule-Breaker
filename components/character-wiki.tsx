@@ -37,6 +37,15 @@ const characters: Character[] = [
   { name: 'Aqyl', slug: 'aqyl', role: 'Jendral Divisi 1', image: '/placeholder/aqyl_icon.png', description: 'Jendral Divisi 1 dan pemegang otoritas tertinggi.' },
   { name: 'Rerin', slug: 'rerin', role: 'Jendral Divisi 2', image: '/placeholder/rerin_icon.png', description: 'Jendral Divisi 2 yang mengawasi sektor timur.' },
   { name: 'Des', slug: 'des', role: 'Jendral Divisi 3', image: '/placeholder/des_icon.png', description: 'Jendral Divisi 3 dengan data misi terklasifikasi.' },
+  { name: 'Kafka', slug: 'kafka', role: 'Letjen Divisi 3', image: '/placeholder/kafka_icon.png', description: 'Letjen Divisi 3 yang santai namun berbahaya, dengan ribuan gagak di bawah kendalinya.' },
+  { name: 'Harith', slug: 'harith', role: 'Cheater', image: '/placeholder/harith_icon.png', description: 'Pria kejam yang menundukkan lawan dengan gravitasi, bagian dari Kultus Suci.' },
+  { name: 'Stormblitza Vinzo', slug: 'vinzo', role: 'Cheater', image: '/placeholder/vinzo_icon.png', description: 'Pemimpin Kultus Suci yang menyelimuti Calvera dengan kegelapan.' },
+  { name: 'Narua Hiro', slug: 'hiro', role: 'Letjen Divisi 7', image: '/placeholder/hiro_icon.png', description: 'Letjen Divisi 7 yang tenang dan selalu memikirkan keselamatan rekannya.' },
+  { name: 'Prisma Arsa', slug: 'arsa', role: 'Anggota Divisi 7', image: '/placeholder/arsa_icon.png', description: 'Anggota Divisi 7 berambut putih dengan aksen merah yang ramah.' },
+  { name: 'Azalea Amira', slug: 'azel', role: 'Anggota Divisi 7', image: '/placeholder/azel_icon.png', description: 'Anggota Divisi 7 yang tegas dan serius, dan paling sering mengingatkan rekannya.' },
+  { name: 'Safira', slug: 'safira', role: 'Adik Arkha', image: '/placeholder/safira_icon.png', description: 'Adik kandung Arkha yang ceria dan selalu menunggu kepulangannya.' },
+  { name: 'Runza', slug: 'runza', role: 'Sahabat masa kecil Arkha', image: '/placeholder/runza_icon.png', description: 'Sahabat masa kecil Arkha yang bandel tapi setia, dan pewaris api Arkha.' },
+  { name: 'Catalytic Noe', slug: 'noe', role: 'Letjen Divisi 6', image: '/placeholder/noe_icon.png', description: 'Letjen Divisi 6 dengan cairan penyembuh merah gelap yang menyelamatkan banyak nyawa.' },
 ]
 
 const filters: Filter[] = ['ALL CHAR', 'CHEATERS', 'DIVISION 7', 'DIVISION 6', 'DIVISION 5', 'DIVISION 4', 'DIVISION 3', 'DIVISION 2', 'DIVISION 1', 'OTHER']
