@@ -25,6 +25,12 @@ const entries: Record<string, { name: string; role: string; image: string; descr
   aqyl: { name: 'Aqyl', role: 'Jendral Divisi 1', image: 'aqyl_icon.png', description: 'Jendral pertama dengan pengaruh luas.' },
   rerin: { name: 'Rerin', role: 'Jendral Divisi 2', image: 'rerin_icon.png', description: 'Jendral Divisi 2 yang beroperasi dalam bayangan.' },
   des: { name: 'Des', role: 'Jendral Divisi 3', image: 'des_icon.png', description: 'Jendral Divisi 3 dengan catatan pertempuran panjang.' },
+  kafka: { name: 'Kafka', role: 'Letjen Divisi 3', image: 'kafka_icon.png', description: 'Letjen Divisi 3 yang santai namun berbahaya, dengan ribuan gagak di bawah kendalinya.' },
+  harith: { name: 'Harith', role: 'Cheater', image: 'harith_icon.png', description: 'Pria kejam yang menundukkan lawan dengan gravitasi, bagian dari Kultus Suci.' },
+  vinzo: { name: 'Stormblitza Vinzo', role: 'Cheater', image: 'vinzo_icon.png', description: 'Pemimpin Kultus Suci yang menyelimuti Calvera dengan kegelapan.' },
+  hiro: { name: 'Narua Hiro', role: 'Letjen Divisi 7', image: 'hiro_icon.png', description: 'Letjen Divisi 7 yang tenang dan selalu memikirkan keselamatan rekannya.' },
+  arsa: { name: 'Prisma Arsa', role: 'Anggota Divisi 7', image: 'arsa_icon.png', description: 'Anggota Divisi 7 berambut putih dengan aksen merah yang ramah.' },
+  azel: { name: 'Azalea Amira', role: 'Anggota Divisi 7', image: 'azel_icon.png', description: 'Anggota Divisi 7 yang tegas dan serius, dan paling sering mengingatkan rekannya.' },
 }
 
 type Profile = {
