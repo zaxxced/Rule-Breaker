@@ -16,12 +16,12 @@ type Character = {
 type Filter = 'ALL CHAR' | 'CHEATERS' | 'DIVISION 7' | 'DIVISION 6' | 'DIVISION 5' | 'DIVISION 4' | 'DIVISION 3' | 'DIVISION 2' | 'DIVISION 1' | 'OTHER'
 
 const characters: Character[] = [
-  { name: 'Arkha', slug: 'arkha', role: 'Karakter utama', image: '/placeholder/arkha_icon.png', description: 'Pemuda yang bimbang antara jejak ayahnya dan hidup biasa.' },
+  { name: 'Arkha', slug: 'arkha', role: 'Anggota Divisi 7, Main Character', image: '/placeholder/arkha_icon.png', description: 'Pemuda yang bimbang antara jejak ayahnya dan hidup biasa.' },
   { name: 'Maran', slug: 'maran', role: '???', image: '/placeholder/maran_icon.png', description: 'Putri ketiga presiden dengan kekuatan penghancur batasan.' },
   { name: 'Rayas', slug: 'rayas', role: 'Anggota Divisi 7', image: '/placeholder/rayas_icon.png', description: 'Pengguna pasir yang arogan, menyimpan dendam pada Caesar.' },
   { name: 'Faedil', slug: 'faedil', role: 'Anggota Divisi 7', image: '/placeholder/faedil_icon.png', description: 'Petarung secepat kilat yang diam-diam jatuh hati pada Xio.' },
   { name: 'Xio', slug: 'xio', role: 'Anggota Divisi 7', image: '/placeholder/xio_icon.png', description: 'Penyembuh berambut merah muda yang keras kepala.' },
-  { name: 'Yume', slug: 'yume', role: '???', image: '/placeholder/yume_icon.png', description: 'Teman masa kecil Arkha, kini berada di Kultus Suci.' },
+  { name: 'Yume', slug: 'yume', role: 'Cheater', image: '/placeholder/yume_icon.png', description: 'Teman masa kecil Arkha, kini berada di Kultus Suci.' },
   { name: 'Niff', slug: 'niff', role: 'Jendral Divisi 7', image: '/placeholder/niff_icon.png', description: 'Jendral termuda yang mampu memotong ruang.' },
   { name: 'Nay', slug: 'nay', role: 'Letjen Divisi 6', image: '/placeholder/nay_icon.png', description: 'Penyelamat peserta Ujian dengan kemampuan Warp.' },
   { name: 'Nana', slug: 'nana', role: 'Letjen Divisi 7', image: '/placeholder/nana_icon.png', description: 'Tegas dan tenang, sosok yang menguatkan Arkha.' },
@@ -30,7 +30,7 @@ const characters: Character[] = [
   { name: 'Mauro', slug: 'mauro', role: 'Cheater', image: '/placeholder/mauro_icon.png', description: 'Buronan kelas A yang sulit dilacak berkat teleportasi.' },
   { name: 'Caesar', slug: 'caesar', role: 'Cheater', image: '/placeholder/caesar_icon.png', description: 'Cheater yang bisa menghilang, pernah mengkhianati timnya.' },
   { name: 'Mita', slug: 'mita', role: 'Jendral Divisi 5', image: '/placeholder/mita_icon.png', description: 'Jendral anggun yang menguasai api, dijuluki Nona Api.' },
-  { name: 'Pucie', slug: 'pucie', role: '???', image: '/placeholder/pucie_icon.png', description: 'Peneliti pembuat cairan penyembuh, bisa berganti gender.' },
+  { name: 'Pucie', slug: 'pucie', role: 'Anggota Divisi 7', image: '/placeholder/pucie_icon.png', description: 'Peneliti pembuat cairan penyembuh, bisa berganti gender.' },
   { name: 'Fazz', slug: 'fazz', role: 'Anggota Divisi 7', image: '/placeholder/fazz_icon.png', description: 'Santai, berkekuatan es, dan sahabat lama Zuma.' },
   { name: 'Ken', slug: 'ken', role: 'Jendral Divisi 6', image: '/placeholder/ken_icon.png', description: 'Jendral yang dikenal paling tidak serius.' },
   { name: 'Zuma', slug: 'zuma', role: 'Anggota Divisi 7', image: '/placeholder/zuma_icon.png', description: 'Humoris dan berisik, dengan mata elang dan pistol kecil.' },
@@ -49,7 +49,8 @@ const characters: Character[] = [
 ]
 
 const filters: Filter[] = ['ALL CHAR', 'CHEATERS', 'DIVISION 7', 'DIVISION 6', 'DIVISION 5', 'DIVISION 4', 'DIVISION 3', 'DIVISION 2', 'DIVISION 1', 'OTHER']
-const matchesFilter = (c: Character, filter: Filter) => filter === 'ALL CHAR' || (filter === 'CHEATERS' && c.role === 'Cheater') || (filter === 'OTHER' && (c.role === '???' || c.role === 'Karakter utama')) || (filter.startsWith('DIVISION ') && c.role.includes(`Divisi ${filter.slice(-1)}`))
+const sideOf = (c: Character): 'enemy' | 'operatives' | 'citizen' => c.role === 'Cheater' ? 'enemy' : /Divisi|Jendral|Letjen/.test(c.role) ? 'operatives' : 'citizen'
+const matchesFilter = (c: Character, filter: Filter) => filter === 'ALL CHAR' || (filter === 'CHEATERS' && c.role === 'Cheater') || (filter === 'OTHER' && sideOf(c) === 'citizen') || (filter.startsWith('DIVISION ') && c.role.includes(`Divisi ${filter.slice(-1)}`))
 
 export function CharacterWiki() {
   const [query, setQuery] = useState('')
@@ -87,7 +88,7 @@ const tones = {
 } as const
 
 function DossierCard({ character: c, index }: { character: Character; index: number }) {
-  const side: keyof typeof tones = c.role === 'Cheater' ? 'enemy' : /Divisi|Jendral|Letjen/.test(c.role) ? 'operatives' : 'citizen'
+  const side = sideOf(c)
   const tone = tones[side]
   return <Link href={`/character/${c.slug}`} className="group relative overflow-hidden border border-cyan-300/15 bg-[#07111d] transition duration-300 hover:-translate-y-1 hover:border-cyan-300/70 hover:shadow-[0_0_22px_rgba(0,200,255,.18)]"><div className="flex items-center justify-between border-b border-cyan-300/10 px-4 py-3 font-mono text-[9px] tracking-wider text-slate-500"><span>FILE #{String(index + 2).padStart(3, '0')} // <b className={`uppercase ${tone.text}`}>{side}</b></span><span className="barcode" /></div><div className="relative aspect-[1.1] overflow-hidden bg-[#091725]"><Image src={c.image} alt={c.name} fill sizes="(max-width: 640px) 100vw, 25vw" className="object-cover grayscale transition duration-500 group-hover:scale-110 group-hover:grayscale-0 group-active:grayscale-0" /><div className="absolute inset-0 bg-gradient-to-t from-[#07111d] via-transparent to-transparent" /><Crosshair className="absolute right-3 top-3 size-5 text-cyan-300/50" /><span className={`absolute bottom-3 left-4 border bg-[#07111d]/80 px-2 py-1 font-mono text-[9px] ${tone.badge}`}>{c.role}</span></div><div className="p-5"><div className="flex items-center justify-between"><h3 className="text-2xl font-semibold tracking-tight text-white">{c.name}</h3><ChevronRight className="size-4 text-cyan-300/50 transition group-hover:translate-x-1 group-hover:text-cyan-300" /></div><p className="mt-2 line-clamp-2 text-xs leading-5 text-slate-500">{c.description}</p><div className="mt-5 flex items-center justify-between border-t border-cyan-300/10 pt-3 font-mono text-[9px] text-slate-600"><span>ANOMALY LVL // {c.role === '???' ? '03' : c.role === 'Cheater' ? '09' : '06'}</span><span>DIVISION // {c.role.match(/Divisi [1-7]/)?.[0]?.replace('Divisi ', '0') ?? 'XX'}</span></div><div className="mt-4 flex items-center justify-between border border-cyan-300/40 bg-cyan-300/5 px-3 py-2 font-mono text-[10px] font-bold tracking-[.18em] text-cyan-300 transition group-hover:bg-cyan-300 group-hover:text-[#04101b]"><span>[ ACCESS FILE ]</span><ArrowUpRight className="size-4" /></div></div></Link>
 }
