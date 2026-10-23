@@ -1,0 +1,19 @@
+{
+  "firstAppear": "Episode 15",
+  "name": "Prisma Arsa",
+  "pseudonym": "Arsa",
+  "age": "?",
+  "height": "?",
+  "gender": "Male",
+  "role": "Anggota Divisi 7",
+  "characteristics": "Ramah dan tenang, dan selalu berusaha menjaga suasana tetap nyaman.",
+  "likes": "?",
+  "dislikes": "?",
+  "power": "?",
+  "summary": [
+    "Prisma Arsa adalah anggota Divisi 7 berambut putih dengan aksen merah yang mencolok. Ia termasuk dalam rombongan Team Rivers dan ikut menyambut Arkha dkk saat mereka lulus.",
+    "Ia ikut dalam misi mengawal putri presiden ke Calvera. Saat pesawat meledak dan ia dihajar makhluk humanoid di salju, ia terluka parah di pelipis, dan dibawa ke rumah sakit bersama Pucie, Fazz, dan Zuma.",
+    "Ia sadar kembali setelah Kafka mengurus para makhluk itu, dan memilih beristirahat di rumah sakit."
+  ],
+  "slug": "arsa"
+}
