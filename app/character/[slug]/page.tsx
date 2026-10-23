@@ -68,7 +68,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
         </Link>
       </header>
 
-      <div className="mx-auto max-w-3xl px-6 py-12 md:py-20">
+      <div className="mx-auto max-w-3xl px-6 pt-12 pb-4 md:pt-20 md:pb-6">
         <Link href="/" className="mb-10 inline-flex items-center gap-2 text-xs text-muted-foreground hover:text-primary">
           <ArrowLeft className="size-4" /> Back to archive
         </Link>
