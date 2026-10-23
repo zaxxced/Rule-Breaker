@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Shield } from 'lucide-react'
-import profiles from '../../../data/profiles.json'
+import { profiles, type Profile } from '../../../data/characters'
 
 const entries: Record<string, { name: string; role: string; image: string; description: string }> = {
   arkha: { name: 'Arkha', role: 'Karakter utama', image: 'arkha_icon.png', description: 'Protagonis utama yang menjadi pusat dari konflik Rule Breaker.' },
@@ -34,22 +34,6 @@ const entries: Record<string, { name: string; role: string; image: string; descr
   safira: { name: 'Safira', role: 'Adik Arkha', image: 'safira_icon.png', description: 'Adik kandung Arkha yang ceria dan selalu menunggu kepulangannya.' },
   runza: { name: 'Runza', role: 'Sahabat masa kecil Arkha', image: 'runza_icon.png', description: 'Sahabat masa kecil Arkha yang bandel tapi setia, dan pewaris api Arkha.' },
   noe: { name: 'Catalytic Noe', role: 'Letjen Divisi 6', image: 'noe_icon.png', description: 'Letjen Divisi 6 dengan cairan penyembuh merah gelap yang menyelamatkan banyak nyawa.' },
-}
-
-type Profile = {
-  slug: string
-  firstAppear?: string
-  name?: string
-  pseudonym?: string
-  age?: string
-  height?: string
-  gender?: string
-  role?: string
-  characteristics?: string
-  likes?: string
-  dislikes?: string
-  power?: string
-  summary?: string[]
 }
 
 const profileData = profiles as Record<string, Profile>
